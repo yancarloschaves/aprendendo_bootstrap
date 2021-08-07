@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8" lang="pt-br">
+<html>
+    <head>
+        <title>Formulários</title>
+        <!--BOOTSTRAP CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Formulários</h1>
+            <form name="form1">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Usuário:</label>
+                            <input type="text" name="user" class="form-control form-control-lg" placeholder="Digite seu usuário">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Senha:</label>
+                            <input type="password" name="pass" class="form-control form-control-lg" >
+                        </div>
+                    </div>   
+                </div>
+                <input type="submit" name="enviar" value="enviar" class="btn btn-lg btn-block btn-outline-primary">
+            </form>
+            <br><br>
+            <h1>Agrupamentos e +</h1>
+            <form name="form2">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary active" >Link 1</a>
+                    <a href="#" class="btn btn-primary">Link 2</a>
+                    <a href="#" class="btn btn-primary">Link 3</a>
+                </div>
+                <br><br>
+                <div class="input-group">
+                    <input type="text" name="email" class="form-control" 
+                    placeholder="Digite seu email">
+                    <div class="input-group-append">
+                        <span class="input-group-text">@webo.com.br</span>
+                    </div>
+                </div>
+                <br><br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">R$</span>
+                    </div>
+                    <input type="text" name="valor" class="form-control" 
+                    placeholder="Digite o valor">
+                </div>
+            </form>
+        </div>
+
+    <footer>
+        <!--BOOTSTRAP JS-->
+    </footer>
+    </body>
+</html>
