@@ -10,13 +10,24 @@
     </head>
     <body class="text-center">
         <form class="form-signin rounded">
-            <h1 class="display-4 mb-3">Login</h1>
+            <div class="progressbar">
+                <div class="progress-bar bg-success" id="progressbar" style="width: x;"></div>
+            </div>
+            <h1 class="display-4 mb-3" id="lblLogin">Login</h1>
             <input type="email" name="email" class="form-control" placeholder="Digite seu email" required>
             <input type="password" name="pass" class="form-control" placeholder="Digite sua senha" required>
-            <div class="checkbox mb-3">
+            <div class="checkbox mb-2">
                 <label><input type="checkbox" name="lembrar" class="checkbox"> Lembre-me </label>
             </div>
-            <input type="submit" name="entrar" value="Entrar" class="btn btn-primary btn-block">
+            <input type="submit" id="btnEntrar" name="entrar" value="Entrar" class="btn btn-primary btn-block mb-3">
         </form>
+
+        <!--JAVASCRIPTS
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="popover.js"></script>
+        <script src="bootstrap.js"></script> -->
     </body>
+    <footer>
+
+    </footer>
 </html>

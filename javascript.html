@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mb-3 mt-3">
+            <h2 class="display-4 mb-3">Popovers</h2>
+            <button class="btn btn-primary" data-toggle="popover" 
+            title="Meu título popover" data-placement="bottom" 
+            data-content="Minha mensagem de Popover">Popover</button>
+        </div>
+
+        <div class="container">
+            <h2 class="display-4 mb-3">Tooltips</h2>
+            <button class="btn btn-success" data-toggle="tooltip" 
+            title="meu primeiro tooltip">Tooltip</button>
+        </div>
+        <footer>
+            <!--JAVASCRIPT-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script>
+                $(function(){
+                    $('[data-toggle="popover"]').popover();
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+            </script>
+        </footer>
+    
+    </body>
+</html>

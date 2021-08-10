@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" lang="pt-br">
+    <head>
+        <title>Modal</title>
+        <!--BOOTSTRAP CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="display-4 mb-3">Modal</h1>         
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#conteudoModal">
+                Abrir modal 
+            </button>
+
+            <h1 class="display-4 mb-3">Modal grid</h1>         
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gridsModal">
+                Abrir modal grid 
+            </button>
+
+
+            <!--MODAL CONTEUDO-->
+            <div class="modal fade" id="conteudoModal">
+                <div class="modal-dialog" >
+                    <div class="modal-content">
+                        <!--TITULO-->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Meu modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <!--CONTEUDO-->
+                        <div class="modal-body">
+                            <p class="lead">Corpo do meu modal</p>
+                        </div>
+
+                        <!--RODAPÉ-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary mr-3" >
+                                Salvar
+                            </button>
+                            
+                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--FIM MODAL CONTEUDO-->
+
+            <!--MODAL GRIDS-->
+            <div class="modal fade" id="gridsModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!--TITULO-->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Grid</h4>
+                            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <!--MODAL CONTEUDO-->
+                        <div class="modal-body">
+                            <div class="row">
+                                <!--GRID 1 - CARD 1-->
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="img/natureza1.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <div class="card-title"><h5>Natureza</h5></div>
+                                            <p class="card-text">A natureza, em seu sentido mais amplo, é equivalente
+                                                 ao "mundo natural" ou "universo físico".
+                                            </p>
+                                            <a href="https://pt.wikipedia.org/wiki/Natureza" class="btn btn-outline-primary" target="_blank">
+                                                wikipedia
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--GRID 2 - CARD 2-->
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="img/natureza1.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <div class="card-title"><h5>Natureza</h5></div>
+                                            <p class="card-text">A natureza, em seu sentido mais amplo, é equivalente
+                                                 ao "mundo natural" ou "universo físico".
+                                            </p>
+                                            <a href="https://pt.wikipedia.org/wiki/Natureza" class="btn btn-outline-primary" target="_blank">
+                                                wikipedia
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--GRID 3 - CARD 3-->
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="img/natureza1.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <div class="card-title"><h5>Natureza</h5></div>
+                                            <p class="card-text">A natureza, em seu sentido mais amplo, é equivalente
+                                                 ao "mundo natural" ou "universo físico".
+                                            </p>
+                                            <a href="https://pt.wikipedia.org/wiki/Natureza" class="btn btn-outline-primary" target="_blank">
+                                                wikipedia
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--MODAL RODAPÉ-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <!--JAVASCRIPT-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+        </footer>
+    </body>
+</html>
